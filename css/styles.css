@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal+SC:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Arsenal SC", sans-serif;
+}
+
+#container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+#nav-list {
+    position: fixed;
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav-list li {
+    list-style: none;
+}
+
+#nav-list li a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: black;
+    font-weight: 700;
+    position: relative;
+}
+
+#left {
+    width: 70%;
+    height: 100vh;
+    background-color: darkgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+    padding-right: 10rem;
+}
+
+#right {
+    width: 30%;
+    height: 100vh;
+    background: linear-gradient(90deg,darkgray 10%,rgba(0, 0, 0, 0.849))
+}
+
+#social-icons {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+#social-icons .fa-brands {
+    font-size: 1.5rem;
+}
+
+#social-icons .fa-brands:hover {
+    background: linear-gradient(180deg, rgb(11, 50, 97) 50%, rgba(190, 174, 174, 0.616));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 5s all ease-in;
+}
+
+#info {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+#introduction {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+span {
+    color: rgb(11, 50, 97);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#info h1 {
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    color: rgb(11, 50, 97);
+}
+
+#det {
+    font-size: 1.2rem;
+    max-width: 30rem;
+}
+
+#btn {
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+#btn button {
+    font-size: 1.5rem;
+    border: 1px solid rgb(11, 50, 97);
+    font-weight: 600;
+    transition: .5s all ease-in;
+    cursor: pointer;
+}
+
+button:nth-child(1) {
+    padding: .8rem 2rem;
+    background-color: rgb(11, 50, 97);
+    color: white;
+}
+
+button:nth-child(2) {
+    padding: .8rem 2rem;
+    background-color: transparent;
+    color: rgb(11, 50, 97);
+}
+
+button:nth-child(1):hover {
+    background-color: transparent;
+    color: rgb(11, 50, 97);
+}
+
+button:nth-child(2):hover {
+    background-color: rgb(11, 50, 97);
+    color: white;
+}
+
+#profile-pic .circle {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.circle:nth-child(1) {
+    background-color: blueviolet;
+    width: 24rem;
+    background: linear-gradient(90deg,transparent 50%, darkgray 50%);
+    
+}
+
+.circle:nth-child(2) {
+    background-image: url(../image/profile.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 20rem;
+    box-shadow: 0 0 1.2rem darkgray,
+                inset 0 0 1.2rem darkgray,
+                0 0 1.8rem rgba(255, 255, 255, 0.808),
+                inset 0 0 1.8rem rgba(255, 255, 255, 0.808);
+}
+
+#nav-list li a::after {
+    content: "";
+    position: absolute;
+    background: black;
+    width: 100%;
+    height: 0.15rem;
+    left: 0;
+    bottom: -4px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+#nav-list li a:hover::after {
+    transform: scaleX(1);
+}
+

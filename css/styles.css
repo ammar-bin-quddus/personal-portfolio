@@ -49,7 +49,7 @@
 #right {
     width: 30%;
     height: 100vh;
-    background: linear-gradient(90deg, darkgray 10%, rgba(0, 0, 0, 0.849))
+    background: linear-gradient(90deg, darkgray 10%, rgba(0, 0, 0, 0.849));
 }
 
 #social-icons {

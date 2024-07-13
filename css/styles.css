@@ -165,8 +165,8 @@ button:nth-child(2):hover {
                 inset 0 0 1.8rem rgba(255, 255, 255, 0.808); */
     box-shadow: 0 0 1.2rem darkgray,
         inset 0 0 1.2rem darkgray,
-        0 0 1.2rem darkgray,
-        inset 0 0 1.2rem darkgray;
+        0 0 1.4rem darkgray,
+        inset 0 0 1.4rem darkgray;
 }
 
 #nav-list li a::after {
@@ -208,6 +208,7 @@ button:nth-child(2):hover {
     position: absolute;
     top: 1rem;
     right: 2rem;
+    display: none;
 }
 
 .dropdown-menu li {
@@ -271,7 +272,7 @@ button:nth-child(2):hover {
     }
 
     #nav-list {
-        gap: 1.1rem;
+        display: none;
     }
 
     #social-icons {
@@ -280,6 +281,10 @@ button:nth-child(2):hover {
         top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+
+    .toggle-btn {
+        display: block;
     }
 
 }
